@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMS Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <h1>BMS Dashboard</h1>
+        <div class="date-time" id="dateTime"></div>
+    </header>
+
+    <main>
+        <!-- Battery 1 Visualization -->
+        <div class="battery-container">
+            <h2>Battery 1</h2>
+            <div id="battery-outline-1">
+                <div id="battery-percent-1"></div>
+            </div>
+            <div id="bolt-1"></div>
+            <div id="charger-cable-1"></div>
+            <div id="charger-1"></div>
+        </div>
+
+        <!-- Battery 2 Visualization -->
+        <div class="battery-container">
+            <h2>Battery 2</h2>
+            <div id="battery-outline-2">
+                <div id="battery-percent-2"></div>
+            </div>
+            <div id="bolt-2"></div>
+            <div id="charger-cable-2"></div>
+            <div id="charger-2"></div>
+        </div>
+
+        <!-- Metrics Display -->
+        <div id="metrics">
+            <div class="metric">
+                <span class="label">Voltage (Battery 1):</span>
+                <span class="value" id="voltage-1">-- V</span>
+            </div>
+            <div class="metric">
+                <span class="label">Current (Battery 1):</span>
+                <span class="value" id="current-1">-- A</span>
+            </div>
+            <div class="metric">
+                <span class="label">Temperature (Battery 1):</span>
+                <span class="value" id="temperature-1">-- °C</span>
+            </div>
+            <div class="metric">
+                <span class="label">Voltage (Battery 2):</span>
+                <span class="value" id="voltage-2">-- V</span>
+            </div>
+            <div class="metric">
+                <span class="label">Current (Battery 2):</span>
+                <span class="value" id="current-2">-- A</span>
+            </div>
+            <div class="metric">
+                <span class="label">Temperature (Battery 2):</span>
+                <span class="value" id="temperature-2">-- °C</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
